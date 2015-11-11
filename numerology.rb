@@ -2,7 +2,7 @@ puts "Please enter your birthday. Add leading zeroes as needed to keep the forma
 
 birthdate=gets.chomp
 
-number = birthdate[0].to_i + birthdate[1].to_i + birthdate[2].to_i + birthdate[3].to_i + birthdate[4].to_i + birthdate[5].to_i + birthdate[6].to_i + birthdate[7].to_i + birthdate[8].to_i
+number = birthdate[0].to_i + birthdate[1].to_i + birthdate[2].to_i + birthdate[3].to_i + birthdate[4].to_i + birthdate[5].to_i + birthdate[6].to_i + birthdate[7].to_i
 
 #def nn(number)
 #number = number.to_s
