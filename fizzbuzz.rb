@@ -3,12 +3,12 @@
 list_number = 1
 
 while(list_number <=100)
-		if (list_number % 3==0)
-			puts "Fizz"
-		elsif (list_number % 5==0)
-			puts "Buzz"
-		elsif (list_number % 3 == 0 && list_number % 5 == 0)
+		if (list_number % 3==0 && list_number % 5 == 0)
 			puts "FizzBuzz"
+		elsif (list_number % 3==0)
+			puts "Fizz"
+		elsif (list_number % 5 == 0)
+			puts "Buzz"
 		else
 			puts list_number
 		end
