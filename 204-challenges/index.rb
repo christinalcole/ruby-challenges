@@ -1,6 +1,6 @@
 require 'sinatra'
 
-# code of numerology_v2.rb
+# code from numerology_v2.rb to calculate birth path and return birth-path message
 # Adds up individual digits of MMDDYYYY birthdate
 
 def first_num(birthdate)
@@ -54,5 +54,7 @@ numerology
 
 get '/:birthdate' do
   birthdate = params[:birthdate]
-  "#{birthdate}"
+  birth_path_num = first_num(birthdate)
+  message = birth_path_msg(birth_path_num)
+  "#{message}"
 end
