@@ -54,7 +54,7 @@ numerology
 
 get '/:birthdate' do
   birthdate = params[:birthdate]
-  birth_path_num = first_num(birthdate)
-  message = birth_path_msg(birth_path_num)
-  "#{message}"
+  #birth_path_num = first_num(birthdate)
+  #message = birth_path_msg(birth_path_num)
+  "#{birthdate}"
 end
