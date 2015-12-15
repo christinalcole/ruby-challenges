@@ -2,7 +2,7 @@
 # Adds up individual digits of MMDDYYYY birthdate
 
 def first_num(birthdate)
-number = birthdate[0].to_i + birthdate[1].to_i + birthdate[2].to_i + birthdate[3].to_i + birthdate[4].to_i + birthdate[5].to_i + birthdate[6].to_i + birthdate[7].to_i + birthdate[8].to_i
+number = birthdate[0].to_i + birthdate[1].to_i + birthdate[2].to_i + birthdate[3].to_i + birthdate[4].to_i + birthdate[5].to_i + birthdate[6].to_i + birthdate[7].to_i
 end
 
 ## Adds up digits of summed birthdate when previous math results in 2-digit value
