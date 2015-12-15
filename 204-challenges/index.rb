@@ -38,7 +38,7 @@ end
 
 get '/:birthdate' do
   birthdate = params[:birthdate]
-  #number = first_num(birthdate)
-  #message = birth_path_msg(path_number)
-  "#{birthdate}"
+  birth_path_num = get_birth_path_num(birthdate)
+  message = get_message(birth_path_num)
+  "#{message}"
 end
