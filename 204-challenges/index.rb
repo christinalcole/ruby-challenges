@@ -12,6 +12,10 @@ end
 def nn(number)
 number = number.to_s
 number = number[0].to_i + number[1].to_i
+if number > 9
+  number = number.to_s
+  number = number[0].to_i + number[1].to_i
+end
 return number
 end
 
