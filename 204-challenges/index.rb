@@ -46,5 +46,5 @@ get '/:birthdate' do
   number = first_num(birthdate) 
   path_number = nn(number)
   message = birth_path_msg(path_number)
-  "Your birth path number is #{path_number}.  #{message}"
+# "Your birth path number is #{path_number}.  #{message}"
 end
