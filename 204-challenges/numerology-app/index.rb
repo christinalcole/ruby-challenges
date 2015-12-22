@@ -41,10 +41,16 @@ end
 end
 
 
+
 get '/:birthdate' do
   birthdate = params[:birthdate]
   number = first_num(birthdate) 
   path_number = nn(number)
-  message = birth_path_msg(path_number)
-# "Your birth path number is #{path_number}.  #{message}"
+  @message = birth_path_msg(path_number)
+  erb :index
 end
+
+get '/newpage/' do
+    erb :newpage
+end
+
