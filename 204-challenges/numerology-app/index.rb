@@ -40,9 +40,11 @@ else message = "Your numerology number is #{number}.  Wait!  Your birth path num
 end
 end
 
+get '/' do
+  erb :form
+end
 
-
-get '/:birthdate' do
+post '/' do
   birthdate = params[:birthdate]
   number = first_num(birthdate) 
   path_number = nn(number)
