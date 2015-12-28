@@ -53,7 +53,7 @@ get '/' do
 end
 
 post '/' do
-  number = first_num(params[:birthdate])
+  number = first_num(params[:birthdate].gsub("-",""))
   path_number = nn(number)
   redirect "/message/#{path_number}"
   erb :index
